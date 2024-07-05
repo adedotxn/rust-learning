@@ -16,6 +16,8 @@ struct Rectangle {
 // Unlike functions, methods are defined within the context of a struct (or an enum or a trait object
 impl Rectangle {
     fn square(size: u32) -> Self {
+        //Associated functions that aren’t methods are often used for constructors that will return a new instance of the struct. These are often called new, but new isn’t a special name and isn’t built into the language.
+
         Self {
             width: size,
             height: size,
